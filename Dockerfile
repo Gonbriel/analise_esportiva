@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     g++ \
     && rm -rf /var/lib/apt/lists/*
 
-RUN R -e "install.packages(c('tidyverse','jsonlite','DBI','RPostgres','shiny','flexdashboard','DT','plotly'), repos='https://cloud.r-project.org')"
+RUN R -e "install.packages(c('tidyverse','jsonlite','DBI','RPostgres','flexdashboard','DT','plotly'), repos='https://cloud.r-project.org')"
 
 WORKDIR /app
 
