@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'form.apps.FormConfig',
     'import_export',
+    'analysis.apps.AnalysisConfig',
 ]
 
 MIDDLEWARE = [
